@@ -81,7 +81,7 @@ nav button {
   color: white;
   position: relative;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .hero > :nth-child(1) {
@@ -167,7 +167,7 @@ input:-webkit-autofill:focus {
 #right-arrow {
   object-fit: contain;
 }
-/* @media (max-width: 37.5rem) {
+@media (max-width: 37.5rem) {
   .netflix-form {
     flex-direction: column;
     align-items: stretch;
@@ -178,4 +178,298 @@ input:-webkit-autofill:focus {
     text-align: center;
     margin-top: 0.625rem;
   }
-} */
+}
+
+#sign-in {
+  background-color: #c11119;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2rem;
+  width: 4.7rem;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+#sign-in:hover {
+  background-color: #98070e;
+}
+#sign-in:active {
+  scale: 0.95;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle {
+  background: transparent;
+  border: 1px solid #ccc;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 0.5rem 0;
+  border-radius: 0.25rem;
+  display: none;
+  z-index: 10;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.dropdown-menu button:hover {
+  background: #222;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+#lang-icon {
+  height: 0.6rem;
+  width: 1.9rem;
+  object-position: center;
+  object-fit: cover;
+  left: 0;
+}
+
+.separation {
+  height: 0.5rem;
+  background-color: gray;
+  opacity: 0.3;
+  margin-top: 3.5rem;
+  width: 100%;
+}
+.second-banner .width {
+  display: flex;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    #000000dd 0%,
+    #0d1a4b 25%,
+    #87102d 50%,
+    #0d1a4b 75%,
+    #0909099a 100%
+  );
+  width: 80%;
+  height: 7rem;
+  left: 10%;
+  gap: 2rem;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 2rem #1b012388;
+}
+.second-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.popcorn img {
+  object-fit: cover;
+  height: 6rem;
+}
+.third-banner {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+.third-banner .third-text {
+  width: 50%;
+  position: relative;
+  margin-top: 10rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: center;
+  top: 3rem;
+}
+.third-banner .third-text h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+.third-banner .third-text p {
+  font-weight: 500;
+  text-align: center;
+  padding-left: 5rem;
+}
+.image-video1 {
+  position: relative;
+  width: 50%;
+  margin-top: 10rem;
+  height: 30rem;
+  overflow: hidden;
+  height: auto;
+}
+
+.image-video1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  z-index: 10;
+  position: relative;
+}
+.image-video1 video {
+  position: absolute;
+  top: 12%;
+  left: 14.5%;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.fourth-banner {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-top: 4rem;
+}
+.fourth-banner .image-video2 {
+  position: relative;
+  width: 50%;
+  height: 30rem;
+  overflow: hidden;
+  height: auto;
+}
+.fourth-banner .image-video2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  z-index: 10;
+  position: relative;
+}
+.fourth-banner .image-video2 video {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 14.5%;
+  width: 60%;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.fourth-banner .fourth-text {
+  width: 50%;
+  position: relative;
+  margin-top: 10rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourth-banner .fourth-text h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: left;
+  left: 0;
+  padding-bottom: 0.7rem;
+  align-items: center;
+  justify-content: center;
+}
+.fourth-banner .fourth-text p {
+  font-weight: 500;
+  text-align: left;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-banner {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-top: 2rem;
+}
+.fifth-banner .fifth-text {
+  width: 50%;
+  position: relative;
+  margin-top: 10rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: center;
+  top: 3rem;
+}
+.fifth-banner .fifth-text h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+  justify-content: center;
+}
+.fifth-banner .fifth-text p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.sixth-banner {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-top: 4rem;
+}
+.sixth-banner .image-video4 {
+  position: relative;
+  width: 50%;
+  height: 30rem;
+  overflow: hidden;
+  height: auto;
+}
+.sixth-banner .image-video4 img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+.sixth-banner .sixth-text {
+  width: 50%;
+  position: relative;
+  margin-top: 10rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.sixth-banner .sixth-text h1 {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: left;
+  left: 0;
+  padding-bottom: 0.7rem;
+  align-items: center;
+  justify-content: center;
+}
+.sixth-banner .sixth-text p {
+  font-weight: 500;
+  text-align: left;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
